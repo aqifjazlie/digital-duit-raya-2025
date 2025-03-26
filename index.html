@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Duit Raya</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope">
+            <div class="envelope-front">
+                <h1>Selamat Hari Raya</h1>
+                <div id="sender-info">
+                    <p>From: [Sender Name]</p>
+                </div>
+            </div>
+            <div class="envelope-back">
+                <div class="money-container">
+                    <div class="money-amount" id="money-display">
+                        RM <span id="amount">50.00</span>
+                    </div>
+                    <div class="tng-code">
+                        <input type="text" id="tng-input" placeholder="Enter TNG Code">
+                        <button onclick="validateTngCode()">Claim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="success-animation" class="hidden">
+            <!-- Confetti or celebration animation will go here -->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
